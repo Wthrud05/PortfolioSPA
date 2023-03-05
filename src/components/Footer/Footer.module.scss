@@ -1,3 +1,58 @@
+@import '../../scss/variables.scss';
+
 .Footer {
-  color: green;
+  background: $mainblack;
+  color: $white;
+  font-weight: 500;
+  height: 60px;
+
+  .Container {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 10px;
+
+    .Social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      svg {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+      }
+
+      .Icon1 {
+        margin-left: 0;
+
+        &:hover {
+          g {
+            path {
+              fill: $accent;
+            }
+          }
+        }
+      }
+    
+      .Icon2 {
+        &:hover {
+            path {
+              fill: $accent;
+            }
+        }
+      }
+    }
+
+    .Owner {
+      position: absolute;
+      right: 20px;
+    }
+  }
 }
+

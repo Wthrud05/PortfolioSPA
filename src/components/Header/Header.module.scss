@@ -5,12 +5,25 @@
   color: $white;
   height: 50px;
 
+  .Container {
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 10px;
+  }
+
   .Title {
     font-size: $fontsm;
     font-weight: 500;
+    cursor: default;
 
     span {
       color: $accent;
+      font-weight: 700;
     }
   }
 }

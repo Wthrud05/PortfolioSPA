@@ -1,13 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { FC } from 'react'
+import { links } from '../../assets/data'
 import styles from './Nav.module.scss'
+import CustomLink from './NavLink/CustomLink'
 
-const Nav = () => {
+const Nav: FC = () => {
   return (
     <div className={styles.Nav}>
-      <Link to={'/'}>Home</Link>
-      <Link to={'/projects'}>Projects</Link>
-      <Link to={'/contacts'}>Contacts</Link>
+      {links.map((link) => {
+        return <CustomLink key={link.id} name={link.name} path={link.path} />
+      })}
     </div>
   )
 }

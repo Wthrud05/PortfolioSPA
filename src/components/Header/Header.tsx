@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className={styles.Header}>
-      <Container css={css}>
+      <Container cls={styles.Container}>
         <div className={styles.Title}>
           Personal <span>Portfolio</span>
         </div>
