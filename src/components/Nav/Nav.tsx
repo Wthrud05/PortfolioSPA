@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { links } from '../../assets/data'
 import styles from './Nav.module.scss'
-import CustomLink from './NavLink/CustomLink'
+import CustomLink from '../CustomLink/CustomLink'
 
 const Nav: FC = () => {
   return (
