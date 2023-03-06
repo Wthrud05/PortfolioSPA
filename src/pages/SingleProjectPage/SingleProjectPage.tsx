@@ -17,6 +17,10 @@ const SingleProjectPage: FC<SingleProjectProps> = ({ project }) => {
     navigate('/projects')
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className={styles.Project}>
       <Container cls={styles.Container}>

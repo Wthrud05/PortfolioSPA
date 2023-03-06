@@ -8,7 +8,6 @@
       justify-content: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       max-width: 1200px;
       margin: 0 auto;
@@ -25,15 +24,25 @@
          .Title {
             font-size: $fontxxl;
             color: $accent;
+
+            @media screen and (max-width: 680px) {
+              font-size: $fontxl;
+            }
         
             &::after {
               position: absolute;
               content: '';
-              top: 55px;
-              right: 0;
+              top: 50px;
+              left: 50%;
+              transform: translate(-50%, 0);
               width: 100%;
               height: 4px;
               background: $accent;
+
+              @media screen and (max-width: 680px) {
+                top: 40px;
+                width: 80%;
+              }
             }
           }
       }

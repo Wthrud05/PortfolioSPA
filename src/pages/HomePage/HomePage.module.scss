@@ -33,6 +33,10 @@
       h1 {
         font-size: $fontxl;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 480px) {
+          font-size: $fontlg;
+        }
       }
 
       span {
@@ -42,11 +46,19 @@
       h3 {
         font-size: $fontlg;
         margin-bottom: 20px; 
+
+        @media screen and (max-width: 480px) {
+          font-size: $fontsm;
+        }
       }
 
       p {
         font-size: $fontsm;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 480px) {
+          font-size: $fonts;
+        }
       }
 
       button {
@@ -65,8 +77,21 @@
           box-shadow: 0 5px 0 rgba(215, 128, 34, .5);
           transform: translateY(-3px);
         }
+
+        @media screen and (max-width: 480px) {
+          font-size: $fonts;
+          width: 150px;
+          height: 50px;
+        }
       }
     }
+
+    @media screen and (max-width: 480px) {
+      .Image {
+        width: 320px;
+      }
+    }
+
   }
 
   .Bot {
@@ -92,11 +117,18 @@
         margin-bottom: 20px;
         font-weight: 700;
         font-size: $fontlg;
+
+        @media screen and (max-width: 480px) {
+        }
       }
 
       p {
         width: 450px;
         font-size: $fontsm;
+
+        @media screen and (max-width: 480px) {
+          width: 300px;
+        }
       }
     }
   }
