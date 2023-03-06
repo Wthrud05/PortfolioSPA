@@ -21,6 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path={'/'} element={<HomePage />}></Route>
+          <Route path={'/portfolio-spa'} element={<HomePage />}></Route>
           <Route path={'/projects'} element={<ProjectsPage getIdHandler={getIdHandler} />}></Route>
           <Route path={'/contacts'} element={<ContactsPage />}></Route>
           <Route
