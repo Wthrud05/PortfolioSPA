@@ -7,7 +7,7 @@ import gameOfTag from './images/gameoftag.png'
 import excelJS from './images/excel.png'
 
 export const links: Link[] = [
-  { id: 1, name: 'Home', path: '/' },
+  { id: 1, name: 'Home', path: '/portfolio-spa' },
   { id: 2, name: 'Projects', path: '/projects' },
   { id: 3, name: 'Contacts', path: '/contacts' },
 ]
