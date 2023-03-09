@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import Container from '../../components/Container/Container'
 import styles from './HomePage.module.scss'
 import bg from '../../assets/images/homepagebg.png'
+import cv from '../../assets/cv.pdf'
 
 const HomePage: FC = () => {
   return (
@@ -16,7 +17,7 @@ const HomePage: FC = () => {
             <h3>a frontend developer</h3>
             <p>ready to create and improve</p>
             <button>
-              <a href="../../assets/CV.pdf" download="myCV.pdf">
+              <a href={cv} download="myCv">
                 Download CV
               </a>
             </button>
