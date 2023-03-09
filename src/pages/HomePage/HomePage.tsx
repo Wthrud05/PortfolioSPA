@@ -15,7 +15,11 @@ const HomePage: FC = () => {
             </h1>
             <h3>a frontend developer</h3>
             <p>ready to create and improve</p>
-            <button>Download CV</button>
+            <button>
+              <a href="../../assets/CV.pdf" download="myCV.pdf">
+                Download CV
+              </a>
+            </button>
           </div>
         </Container>
       </div>

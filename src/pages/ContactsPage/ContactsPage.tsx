@@ -11,7 +11,7 @@ const ContactsPage = () => {
         <h2>Location</h2>
         <span>Smolensk. Russia</span>
 
-        <h2>Telegram / Whatsupp</h2>
+        <h2>Telegram / WhatsApp</h2>
         <span>+7 (910) 721-16-42</span>
 
         <h2>Email</h2>
